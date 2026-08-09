@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>telecomsteve</title>
+<link rel="icon" type="image/webp" href="./img/favicon.webp">
+<link rel="stylesheet" href="https://storage.googleapis.com/demo.telecomsteve.com/css/stylesheet.css">
+</head>
+<body>
+
+    <div id="nav-placeholder"></div>
+    <script src="https://storage.googleapis.com/demo.telecomsteve.com/js/nav-loader.js"></script>
+
+<div class="main">
+  <h2>Platform Portfolio</h2>
+  <p>A selection of my infrastructure and full-stack projects.</p>
+
+    <div class="portfolio-container">
+        <div class="portfolio-container_text">        
+            <h3 class="portfolio_accent">Spenditure</h3>
+
+            <p>I built Spenditure as a Google Cloud-focused FinOps platform with spend and infrastructure views backed by a secure FastAPI service that reads
+                BigQuery Billing Export data. I am most proud of its included "Cloud Map" feature, which is unique among FinOps tools, allowing users to see a 3D map of their deployments, combined with costs.
+                To make the product feel like a live partner, I added an MCP + RAG
+                AI agent for billing questions and allowed whitelabeling using
+                Kubernetes and Caddy to automate ingress, routing, and SSL for customer-owned domains.</p>
+
+            <p><a target="_blank" rel="noopener" href="https://spenditure.com">Visit Webpage</a></p>
+        </div>
+        <div class="portfolio-container_text">
+            <img class="portfolio_image" src="./img/gcp_logo.jpg" alt="Google Cloud Platform Logo">
+        </div>
+    </div>
+  
+    <div class="portfolio-container">
+        <div class="portfolio-container_text">        
+            <h3 class="portfolio_accent">Yoptio AI RSS Reader</h3>
+                
+            <p>Yoptio is an RSS reader with additional AI features baked-in. Beyond basic feed parsing, Yoptio uses AI to support article narration, article summaries, as well as a personalized daily podcast built from users' personal Yoptio activity and feeds.
+                I build Yoptio from the ground up; UI, back-end, as well as testing and deployment-chain automations.
+                Yoptio runs within Google Cloud and uses Google Vertex and Gemini AI to power it's AI features.
+            </p>
+                
+            <p><a target="_blank" rel="noopener" href="https://yoptio.com">Try Yoptio</a></p>
+        </div>
+        <div class="portfolio-container_text">
+            <img class="portfolio_image" src="./img/gemini.webp" alt="Google Gemini Logo">
+        </div>
+    </div>
+
+    <div class="portfolio-container">
+        <div class="portfolio-container_text">    
+        <h3 class="portfolio_accent">SIP Trunking at Twitter</h3>
+            
+        <p>During periods of early growth, Twitter deployed a number of isolated and non-standard phone systems that had become expensive and difficult to support.  
+            To manage the complexity, Twitter hired me to unify its networks and migrate them to cloud deployment.
+
+            The result was fully virtualized VoIP infrastructure, combined with a Twilio Cloud SIP trunking. 
+            This new design reduced Twitter's carrier costs 72%.
+            </p>
+            
+        <p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=lFzqYgF2MPQ">Watch Conference Talk</a></p>
+        </div>
+        <div class="portfolio-container_text">
+            <img class="portfolio_image" src="./img/twitter_logo.webp" alt="Twitter">
+        </div>
+    </div>
+
+    <div class="portfolio-container">
+        <div class="portfolio-container_text">
+            <h3 class="portfolio_accent">5G Mobility Simulator</h3>
+                
+            <p>A simulator to recreate the mobility and tower association of a device in a 5G network. 
+                The system uses random walk behavior and monte carlo sampling to show connection behavior across 10,000 simulations.</p>
+            <p><a target="_blank" rel="noopener" href="https://github.com/stevenplatt/5G-mobility-simulator">GitHub Source</a></p>
+        </div>
+        <div class="portfolio-container_text">
+            <img class="portfolio_image" src="./img/python_logo.webp" alt="Python Programming">
+        </div>
+    </div>
+</div>
+
+</body>
+</html> 

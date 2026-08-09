@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Francesco Massafra — Research Engineer</title>
+<meta name="description" content="Francesco Massafra — Research Engineer working on reinforcement learning, agentic planning, LLM evaluation, and reproducible deep-learning experiments.">
+<link rel="icon" type="image/webp" href="./img/favicon.webp">
+<link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+<body>
+
+<header class="topnav">
+    <nav class="topnav_inner">
+        <a href="#top" class="topnav_brand">FM</a>
+        <div class="topnav_links">
+            <a href="#research">Research</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="./cv.pdf" target="_blank" rel="noopener">CV</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+        <!-- Photo: drop file at img/francesco.webp and replace the .hero_initials block below with:
+             <img src="./img/francesco.webp" alt="Francesco Massafra" class="hero_photo"> -->
+        <div class="hero_initials" aria-hidden="true">FM</div>
+
+        <h1>Francesco Massafra</h1>
+        <p class="hero_role">Research Engineer</p>
+        <p class="hero_tagline">
+            I build and evaluate AI systems — reinforcement learning, agentic planning,
+            latent world models, and LLM evaluation — and I'm increasingly focused on
+            <strong>efficient inference</strong>: making models faster and cheaper to serve.
+            Reproducible experiments, clean research infrastructure.
+        </p>
+
+        <div class="hero_links">
+            <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/francesco-massafra">LinkedIn</a>
+            <a target="_blank" rel="noopener" href="https://github.com/FireWtap">GitHub</a>
+            <a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=Mijp4OoAAAAJ&amp;hl=en">Google Scholar</a>
+            <a href="mailto:massafra32@gmail.com">Email</a>
+            <a href="./cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+        </div>
+    </section>
+
+    <!-- Research projects -->
+    <section id="research">
+        <h2>Research</h2>
+        <p>
+            M.Sc. Artificial Intelligence student at the University of Amsterdam working as a
+            research engineer: I design experiment pipelines, probe and evaluate models, and
+            diagnose failures in reinforcement-learning and LLM systems. Two-time post-graduation
+            research grant recipient; first author on
+            <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2603.05572">arXiv:2603.05572</a>.
+        </p>
+
+        <div class="card">
+            <div class="card_head">
+                <h3>Hi-LeWM: Hierarchical Planning in LeWorldModel</h3>
+                <span class="card_year">2026</span>
+            </div>
+            <a class="badge" target="_blank" rel="noopener" href="https://wm-booth.org/">Accepted @ WM@Booth — Workshop on World Models, Chicago Booth</a>
+            <p>
+                Designed and evaluated a transformer-based hierarchical planner for goal-conditioned
+                control, combining latent macro-actions, CEM/MPC planning, and receding-horizon
+                execution over a frozen world model. Diagnosed off-manifold subgoal failures in
+                long-horizon planning and improved robustness by constraining high-level search to
+                data-supported macro-actions.
+            </p>
+            <a class="card_link" target="_blank" rel="noopener" href="https://github.com/dl2-uva-le-wm/h-le-wm">Code &rarr;</a>
+        </div>
+
+        <div class="card">
+            <div class="card_head">
+                <h3>Open-Weight LLM Safety and Dataset Filtering</h3>
+                <span class="card_year">2026</span>
+            </div>
+            <p>
+                Built reproducible LLM evaluation pipelines for prompt-based harmful-content
+                classification across open-weight models, moderation datasets, and web-scale corpora.
+                Implemented deterministic data mining, preprocessing, model-evaluation, and analysis
+                workflows across Common Crawl, C4, FineWeb, and safety benchmarks.
+            </p>
+            <a class="card_link" target="_blank" rel="noopener" href="https://github.com/NiccoloCase/safer-pretraining-reproduction-uva">Code &rarr;</a>
+        </div>
+
+        <div class="card">
+            <div class="card_head">
+                <h3>Do Video Foundation Models Understand Intuitive Physics?</h3>
+                <span class="card_year">2026</span>
+            </div>
+            <p>
+                Probed frozen V-JEPA, VideoMAE, and LTX-Video representations on IntPhys2 and MVP to
+                evaluate whether pretrained video models encode intuitive-physics structure. Trained
+                and compared linear, MLP, and temporal-attention readouts; analyzed layerwise
+                emergence, temporal-control failures, and shortcut-driven benchmark behavior.
+            </p>
+            <a class="card_link" target="_blank" rel="noopener" href="https://arxiv.org/abs/2606.09646">arXiv:2606.09646 &rarr;</a>
+        </div>
+
+        <div class="card card_pub">
+            <div class="card_head">
+                <h3>Machine Learning for analysis of Multiple Sclerosis cross-tissue bulk and single-cell transcriptomics data</h3>
+                <span class="card_year">2026</span>
+            </div>
+            <p>
+                First author. End-to-end ML pipeline for MS transcriptomics across bulk microarray and
+                single-cell RNA-seq (CD4+ and B-cells): XGBoost classification, SHAP feature
+                attribution, and differential expression analysis. Models reached AUC 0.94 on CSF
+                B-cells; SHAP gene selection proved complementary to classical DEA, surfacing novel
+                mechanistic hypotheses and candidate biomarkers.
+            </p>
+            <a class="card_link" target="_blank" rel="noopener" href="https://arxiv.org/abs/2603.05572">arXiv:2603.05572 &rarr;</a>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="job">
+            <div class="job_head">
+                <h3>Research Assistant — MEDICA Project, University of Pisa</h3>
+                <span class="job_dates">2024 – 2025</span>
+            </div>
+            <p class="job_meta">Two-time post-graduation research grant recipient · Pisa, Italy</p>
+            <p>
+                Built reproducible ML pipelines for transcriptomics classification, feature
+                attribution, statistical analysis, and cross-dataset integration. Resulting work
+                published as arXiv:2603.05572.
+            </p>
+        </div>
+
+        <div class="job">
+            <div class="job_head">
+                <h3>Full-Stack Developer — Wylit</h3>
+                <span class="job_dates">2021 – 2025</span>
+            </div>
+            <p class="job_meta">Part-time · Remote / Hybrid</p>
+            <p>
+                Built and owned full-stack production web platforms for 15+ client projects using
+                React, Node.js, PostgreSQL, Docker, and Linux deployments, improving responsiveness
+                and reducing load times by up to 40%.
+            </p>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="job">
+            <div class="job_head">
+                <h3>M.Sc. Artificial Intelligence — University of Amsterdam</h3>
+                <span class="job_dates">2025 – present</span>
+            </div>
+            <p class="job_meta">GPA: 8.75/10</p>
+            <p>Relevant coursework: Reinforcement Learning, Deep Learning, NLP, Computer Vision, Information Retrieval.</p>
+        </div>
+
+        <div class="job">
+            <div class="job_head">
+                <h3>B.Sc. Computer Science — University of Pisa</h3>
+                <span class="job_dates">2021 – 2024</span>
+            </div>
+            <p class="job_meta">Final grade: 110/110</p>
+            <p>Thesis on ML for Multiple Sclerosis biomarker discovery.</p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="chips">
+            <span>Efficient Inference / Model Serving</span>
+            <span>Reinforcement Learning</span>
+            <span>Agentic Planning</span>
+            <span>Latent World Models</span>
+            <span>LLM Evaluation</span>
+            <span>Model Probing</span>
+            <span>Failure Analysis</span>
+            <span>Reproducible Experiments</span>
+            <span>Python</span>
+            <span>PyTorch</span>
+            <span>pandas / NumPy / scikit-learn</span>
+            <span>XGBoost / SHAP</span>
+            <span>Docker</span>
+            <span>Linux</span>
+            <span>Git</span>
+            <span>PostgreSQL</span>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+            Interested in research, engineering, efficient inference, edge-AI deployment —
+            or just a chat? Reach out.
+        </p>
+        <div class="hero_links">
+            <a href="mailto:massafra32@gmail.com">massafra32@gmail.com</a>
+            <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/francesco-massafra">LinkedIn</a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>Francesco Massafra · Amsterdam, Netherlands · 2026</p>
+    <p class="footer_joke">All em dashes on this page were humanly re-evaluated. 🫪</p>
+</footer>
+
+</body>
+</html>

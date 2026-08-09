@@ -1,0 +1,353 @@
+/*
+ * Francesco Massafra — personal site stylesheet.
+ * Modern light redesign, single-page layout.
+ */
+
+:root {
+  --color-accent: #4f46e5;
+  --color-accent-hover: #3730a3;
+  --color-text: #1f2937;
+  --color-text-muted: #6b7280;
+  --color-text-faint: #9ca3af;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f9fafb;
+  --color-border: #e5e7eb;
+  --content-width: 760px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--color-text);
+  background: var(--color-surface-alt);
+  line-height: 1.65;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+/* Top navigation */
+.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid var(--color-border);
+  backdrop-filter: blur(8px);
+}
+
+.topnav_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--content-width);
+  margin-inline: auto;
+  padding: 12px 24px;
+}
+
+.topnav_brand {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--color-text);
+}
+
+.topnav_brand:hover {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.topnav_links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.topnav_links a {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+.topnav_links a:hover {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+/* Page content */
+main {
+  max-width: var(--content-width);
+  margin-inline: auto;
+  padding: 0 24px 48px;
+}
+
+section {
+  padding-top: 56px;
+}
+
+h2 {
+  margin: 0 0 16px;
+  font-size: 1.6rem;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+/* Hero */
+.hero {
+  padding-top: 72px;
+  text-align: center;
+}
+
+.hero_initials,
+.hero_photo {
+  width: 128px;
+  height: 128px;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+}
+
+.hero_initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-surface);
+  background: linear-gradient(135deg, var(--color-accent), #818cf8);
+}
+
+.hero_photo {
+  display: block;
+  object-fit: cover;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2.4rem;
+  letter-spacing: -0.02em;
+}
+
+.hero_role {
+  margin: 8px 0 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.hero_tagline {
+  max-width: 560px;
+  margin: 16px auto 0;
+  color: var(--color-text-muted);
+}
+
+.hero_tagline strong {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.hero_links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.hero_links a {
+  padding: 8px 18px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.hero_links a:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  text-decoration: none;
+}
+
+/* Acceptance badge */
+.badge {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  background: rgba(79, 70, 229, 0.08);
+  border: 1px solid rgba(79, 70, 229, 0.25);
+  border-radius: 999px;
+}
+
+.badge:hover {
+  text-decoration: none;
+  background: rgba(79, 70, 229, 0.14);
+  color: var(--color-accent-hover);
+}
+
+/* Cards (research projects, publications) */
+.card {
+  margin-top: 20px;
+  padding: 20px 24px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+}
+
+.card p {
+  margin: 12px 0 0;
+  color: var(--color-text-muted);
+}
+
+.card_head {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.card_year {
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  color: var(--color-text-faint);
+}
+
+.card_link {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+.card_link-muted {
+  color: var(--color-text-faint);
+  cursor: default;
+}
+
+.card_link-muted:hover {
+  text-decoration: none;
+  color: var(--color-text-faint);
+}
+
+.card_pub {
+  border-left: 3px solid var(--color-accent);
+}
+
+/* Experience / education entries */
+.job {
+  margin-top: 28px;
+}
+
+.job_head {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.job_dates {
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  color: var(--color-text-faint);
+}
+
+.job_meta {
+  margin: 4px 0 0;
+  font-size: 0.95rem;
+  color: var(--color-text-faint);
+}
+
+.job p:last-child {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+/* Skill chips */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chips span {
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+}
+
+/* Footer */
+.footer {
+  padding: 32px 24px;
+  font-size: 0.9rem;
+  color: var(--color-text-faint);
+  text-align: center;
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer_joke {
+  margin-top: 6px !important;
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+
+/* Mobile */
+@media screen and (max-width: 640px) {
+  .hero {
+    padding-top: 48px;
+  }
+
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .topnav_links {
+    gap: 14px;
+  }
+
+  .card_head,
+  .job_head {
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero_links a {
+    transition: none;
+  }
+}
