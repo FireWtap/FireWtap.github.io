@@ -239,6 +239,7 @@ h3 {
 .card_link {
   display: inline-block;
   margin-top: 12px;
+  margin-right: 16px;
   font-weight: 500;
 }
 
